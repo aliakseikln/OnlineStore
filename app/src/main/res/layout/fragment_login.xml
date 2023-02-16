@@ -23,7 +23,7 @@
             android:drawableStart="@drawable/ic_bee_shape"
             android:drawablePadding="6dp"
             android:text="Bee."
-            android:textColor="#FF9800"
+            android:textColor="#FB8C00"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
             app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +33,7 @@
             style="@style/h4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="Let's Login"
             android:textAlignment="center"
@@ -47,7 +47,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
-            android:textColor="@color/g_gray700"
             android:text="Don't have an account? Register"
             app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
             app:layout_constraintTop_toBottomOf="@id/tvLetsRegister" />
@@ -92,8 +91,8 @@
             android:id="@+id/facebookLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
             android:background="#2B00BCD4"
+            android:layout_marginTop="13dp"
             android:src="@drawable/facebook_login"
             app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
             app:layout_constraintTop_toBottomOf="@id/buttonLoginLogin" />

@@ -19,12 +19,13 @@
             style="@style/h3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="60dp"
             android:drawableStart="@drawable/ic_bee_shape"
             android:drawablePadding="6dp"
             android:text="Bee."
             android:textColor="#FF9800"
             android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
             app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,10 +34,11 @@
             style="@style/h4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="15dp"
             android:gravity="center"
-            android:text="Let's Login"
+            android:text="Let's Register"
             android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
             app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
             app:layout_constraintTop_toBottomOf="@id/tvAppName" />
 
@@ -45,24 +47,49 @@
             style="@style/h2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
-            android:textColor="@color/g_gray700"
-            android:text="Don't have an account? Register"
+            android:text="Do you have an account? Log in"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
             app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
             app:layout_constraintTop_toBottomOf="@id/tvLetsRegister" />
+
+        <EditText
+            android:id="@+id/edFirstName"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edittextHeight"
+            android:layout_marginTop="50dp"
+            android:hint="Last Name"
+
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/tvDoYouHaveAnAccount" />
+
+        <EditText
+            android:id="@+id/edLastName"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edittextHeight"
+            android:layout_marginTop="15dp"
+            android:hint="Last Name"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/edFirstName" />
 
         <EditText
             android:id="@+id/edEmailLogin"
             style="@style/editText"
             android:layout_width="0dp"
             android:layout_height="@dimen/edittextHeight"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="15dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="@id/guidelineLoginRight"
             app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
-            app:layout_constraintTop_toBottomOf="@id/tvDoYouHaveAnAccount" />
+            app:layout_constraintTop_toBottomOf="@id/edLastName" />
 
         <EditText
             android:id="@+id/edPasswordLogin"
